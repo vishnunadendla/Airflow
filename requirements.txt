@@ -1,0 +1,9 @@
+# Use a newer Cosmos version for better stability
+astronomer-cosmos[dbt-bigquery]>=1.5.0
+
+# Remove the specific protobuf pin to let the system pick the best version
+# or use a more modern minimum if your project strictly needs it
+protobuf>=3.20.0 
+
+# Keep this for Astro CLI functionality
+astro-run-dag
